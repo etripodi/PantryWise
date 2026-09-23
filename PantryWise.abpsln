@@ -1,0 +1,54 @@
+{
+  "id": "2f5c6a3f-924e-41ef-9e94-eb4527868b8b",
+  "creationTime": "09/23/2026 19:10:28 +00:00",
+  "template": "app",
+  "versions": {
+    "AbpFramework": "9.3.6",
+    "AbpStudio": "1.4.2",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "PantryWise": {
+      "path": "PantryWise.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/abp-studio/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+      
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app",
+    "createdAbpStudioVersion": "1.4.2",
+    "tiered": "false",
+    "runInstallLibs": "true",
+    "useLocalReferences": "false",
+    "multiTenancy": "true",
+    "includeTests": "false",
+    "kubernetesConfiguration": "false",
+    "uiFramework": "no-ui",
+    "mobileFramework": "none",
+    "distributedEventBus": "none",
+    "databaseProvider": "ef",
+    "runDbMigrator": "true",
+    "databaseManagementSystem": "sqlserver",
+    "separateTenantSchema": "false",
+    "createInitialMigration": "true",
+    "theme": "leptonx-lite",
+    "themeStyle": "",
+    "themeMenuPlacement": "",
+    "mobileFramework": "none",
+    "publicWebsite": "false",
+    "socialLogin": "true",
+    "selectedLanguages": ["English", "Arabic", "Chinese (Simplified)", "Chinese (Traditional)", "Czech", "English (United Kingdom)", "Finnish", "French", "German (Germany)", "Hindi ", "Hungarian", "Icelandic", "Italian", "Portuguese (Brazil)", "Romanian (Romania)", "Russian", "Slovak", "Spanish", "Swedish", "Turkish", ],
+    "defaultLanguage": "English",
+    "createCommand": "abp new PantryWise -t app --database-provider ef --database-management-system sqlserver --theme leptonx-lite --no-tests --without-cms-kit --dont-run-bundling -no-file-management"
+  }
+}

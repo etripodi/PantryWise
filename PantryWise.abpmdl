@@ -1,0 +1,87 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.3.6",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.3.6",
+      "isInstalled": true,
+      "creationTime": "09/23/2026 19:10:29 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "PantryWise.Application": {
+      "path": "src/PantryWise.Application/PantryWise.Application.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.Domain.Shared": {
+      "path": "src/PantryWise.Domain.Shared/PantryWise.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.Application.Contracts": {
+      "path": "src/PantryWise.Application.Contracts/PantryWise.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.HttpApi": {
+      "path": "src/PantryWise.HttpApi/PantryWise.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.HttpApi.Client": {
+      "path": "src/PantryWise.HttpApi.Client/PantryWise.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.EntityFrameworkCore": {
+      "path": "src/PantryWise.EntityFrameworkCore/PantryWise.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.DbMigrator": {
+      "path": "src/PantryWise.DbMigrator/PantryWise.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.HttpApi.Host": {
+      "path": "src/PantryWise.HttpApi.Host/PantryWise.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "PantryWise.Domain": {
+      "path": "src/PantryWise.Domain/PantryWise.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
