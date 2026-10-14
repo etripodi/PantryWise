@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title mb-0">{{ '::Pantry:ExpiringItems' | abpLocalization }}</h5>
+  </div>
+  <div class="card-body">
+    <div class="mb-3 col-md-4">
+      <label for="beforeDate" class="form-label">{{ '::Pantry:BeforeDate' | abpLocalization }}</label>
+      <div class="input-group">
+        <input
+          id="beforeDate"
+          class="form-control"
+          placeholder="dd/mm/yyyy"
+          ngbDatepicker
+          #dp="ngbDatepicker"
+          [(ngModel)]="beforeDate"
+          (ngModelChange)="load()"
+        />
+        <button class="btn btn-outline-secondary" type="button" (click)="dp.toggle()">
+          <i class="fas fa-calendar"></i>
+        </button>
+      </div>
+    </div>
+
+    @if (loading) {
+      <p>{{ '::Pantry:Loading' | abpLocalization }}</p>
+    } @else if (!items.length) {
+      <p class="text-muted">{{ '::Pantry:NoItems' | abpLocalization }}</p>
+    } @else {
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>{{ '::Pantry:Product' | abpLocalization }}</th>
+            <th>{{ '::Pantry:BarCode' | abpLocalization }}</th>
+            <th>{{ '::Pantry:ExpirationDate' | abpLocalization }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (item of items; track item.id) {
+            <tr>
+              <td>{{ item.product?.name }}</td>
+              <td>
+                @if (item.product?.barCode) {
+                  <svg class="barcode" [attr.jsbarcode-value]="item.product.barCode" jsbarcode-format="CODE128" jsbarcode-height="40" jsbarcode-fontsize="14"></svg>
+                }
+              </td>
+              <td>{{ item.expirationDate | date: 'dd/MM/yyyy' }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  </div>
+</div>

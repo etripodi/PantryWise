@@ -8,6 +8,12 @@ export const APP_ROUTES: Routes = [
     loadComponent: () => import('./home/home.component').then(c => c.HomeComponent),
   },
   {
+    path: 'pantry/expiring',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pantry/expiring-items/expiring-items.component').then(c => c.ExpiringItemsComponent),
+  },
+  {
     path: 'account',
     loadChildren: () => import('@abp/ng.account').then(c => c.createRoutes()),
   },

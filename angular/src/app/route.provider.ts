@@ -17,5 +17,12 @@ function configureRoutes() {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/pantry/expiring',
+        name: '::Menu:ExpiringItems',
+        iconClass: 'fas fa-calendar-times',
+        order: 2,
+        layout: eLayoutType.application,
+      },
   ]);
 }

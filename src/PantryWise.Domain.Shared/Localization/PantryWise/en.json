@@ -2,6 +2,14 @@
   "Culture": "en",
   "Texts": {
     "AppName": "PantryWise",
+    "Menu:ExpiringItems": "Expiring items",
+    "Pantry:ExpiringItems": "Expired or expiring items",
+    "Pantry:BeforeDate": "Expiring before",
+    "Pantry:Loading": "Loading...",
+    "Pantry:NoItems": "No items for that date.",
+    "Pantry:Product": "Product",
+    "Pantry:BarCode": "Bar code",
+    "Pantry:ExpirationDate": "Expiration date",
     "Menu:Home": "Home",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information visit",
     "Welcome": "Welcome"
