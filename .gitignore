@@ -266,3 +266,12 @@ src/PantryWise.HttpApi.Host/appsettings.secrets.json
 # IdentityServer temp files
 tempkey.rsa
 tempkey.jwk
+
+# Angular UI
+angular/node_modules/
+angular/dist/
+angular/.angular/
+angular/yarn-error.log
+
+# VS Code
+.vscode/
